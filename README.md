@@ -10,7 +10,7 @@ Lead stories: the International Court of Justice rules 9–6 that Myanmar commit
 
 ## How it was made
 
-`render_v2.py` draws the front page deterministically with Pillow and DejaVu fonts (no network, no clock, no randomness): masthead with a halftone globe, three illustrated lead panels (scales of justice, three-node summit, gamepad), a markets strip, and a 12-story grid — the "Night Desk" system: deep ink-navy paper, a single gold accent, every visual hand-coded vector geometry. `render.py` is the v1 generator (cream broadsheet, superseded). `main.ts` copies the rendered `entry.png` to the output directory.
+`compose_v4.py` builds the front page deterministically: it scales the original flat editorial illustration in `illustrations/balance.png` (golden scales of justice with a dotted-globe finial, generated in-session, no text) and typesets the headline, date and labels with Pillow and DejaVu fonts (no network, no clock, no randomness). `render_v3.py` is the earlier hand-drawn vector version, `render_v2.py` the dark front page, `render.py` the v1 broadsheet — all superseded. `main.ts` copies the rendered `entry.png` to the output directory.
 
 ## Run it
 
